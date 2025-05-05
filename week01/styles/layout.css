@@ -1,0 +1,118 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* CSS Document */
+/* Global Styles */
+.header-text {
+    font-weight: bold;
+    font-family: delight, Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    background-color: #333;
+    color: #fff;
+    padding: 40px 10px 150px 50px;
+    text-align: left;
+    width: auto;
+}
+.nav-bar {
+    background-color: #000000;
+}
+.nav-bar ul {
+    text-decoration: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0px 20px 0px;
+}
+.nav-bar ul li a {
+    list-style: none;
+    font-family: delight, Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+.nav-bar ul li a:hover {
+    color: #008bd6;
+    text-decoration: underline;
+}
+main {
+    font-family: delight, Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: #252525;
+    display: flex;
+}
+.container
+{
+    width: 70%;
+    height: 350px;
+    background-color: #afaeae;;
+    padding: 20px;
+    margin-right: 20px;
+}
+aside{
+    padding: 20px;
+    background-color:#fff;
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0px 20px 0px;
+    text-align: center;
+    font-family: delight, Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    height: 200px}
