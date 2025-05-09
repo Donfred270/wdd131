@@ -194,3 +194,20 @@ aside a:hover{
     color: #ff7b00;
     transition: 0.5s;
 }
+footer{
+    background-color: #000000;
+    color: #ffffff;
+    padding: 30px;
+    text-align: center;
+    font-size: 17px;
+    font-weight: bold; 
+}
+footer p{
+    padding: 10px;  
+}
+#lastmodified{
+    font-size: 17px;
+    font-weight: regular;
+    color: #ceff00;
+    padding-left: 5px;
+}
