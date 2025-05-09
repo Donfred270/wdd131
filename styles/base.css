@@ -1,0 +1,196 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/* Custom styles for the application */
+body {
+  font-family: poppins, dm-sans, Arial, sans-serif;
+}
+
+body h1{
+    font-size: 50px;
+    font-weight: bold;
+    color: #000000;
+    background-color: #ceff00;
+    letter-spacing: -2px;
+    text-align: center;
+    padding: 30px;
+}
+nav ul{
+    background-color: #000000;
+    display: flex;
+    justify-content: space-around;
+    padding: 25px 20px;
+}
+nav ul li a{
+    list-style: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    color: #ceff00;
+    transition: 0.5s;
+}
+main{
+    display: flex;
+    background-color: #fcffef;
+}
+.section{
+    width: 70%;
+    margin: 30px;
+    background-color: #fff5eb;
+    border: #ceff00 solid 2px;
+    border-radius: 10px;
+}
+
+aside{
+    width: 30%;
+    margin: 30px 30px 30px 0;
+    background-color: #fff5eb;
+    border: #ceff00 solid 2px;
+    border-radius: 10px;
+}
+.bio{
+    font-size: 17px;
+    font-weight: regular;
+    color: #000000;
+    padding-left: 120px;
+    text-align: justify;
+    line-height: 20px;
+}
+
+.card-content{
+    display: flex;
+    border: none;
+    align-items: center;
+}
+.card-content1{
+    display: flex;
+    border: none;
+    width: 80%;
+    align-items: center;
+    font-family: poppins, Arial, sans-serif;
+    font-size: 17px;
+    font-weight: regular;
+    color: #000000;
+    text-align: justify;
+}
+.profile{
+    width: 300px;
+    height: auto;
+    border-radius: 6px;
+    margin: 40px 100px 40px 40px;
+}
+.flag{
+    width: 250px;
+    height: auto;
+    border-radius: 6px;
+    margin: 40px 40px 40px 120px;
+}
+.about-me, .ressources{
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    padding: 15px;
+    text-align: center;
+    background-color: black;
+    border-radius: 8px 8px 0  0;
+}
+.city{
+    font-size: 30px;
+    font-weight: bold;
+    color: #000000;
+    padding: 0 70px 0 70px;
+    width: 67%;
+    text-align: center;
+}
+.divider{
+    width: 100%;
+    height: 2px;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.ressources-web{
+    font-size: 17px;
+    font-weight: regular;
+    color: #000000;
+    text-decoration: none;
+    padding: px;
+    display: flex; /* Utilise Flexbox pour aligner les éléments */
+    justify-content: left; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+    height: 100%;
+}
+.ressources-web ul{
+    list-style: disc; 
+    margin-right: 10px;
+    padding-left: 40px;
+}
+aside li{
+    text-decoration: none;
+    color: #000000;
+    padding-bottom: 10px;
+    margin: 10px;
+}
+aside a{
+    color: #000000;
+    transition: 0.5s;
+    text-decoration: none;
+}
+aside a:hover{
+    color: #ff7b00;
+    transition: 0.5s;
+}
