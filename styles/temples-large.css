@@ -1,0 +1,41 @@
+@media screen and (min-width: 768px) {
+    .temple-container {
+        grid-template-columns: repeat(3, 1fr); /* Three columns for larger screens */
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px;
+        height: auto;
+    }
+    nav ul {
+        display: flex;
+        list-style: none;
+    }
+    nav ul li {
+        margin: 0 40px;
+    }
+    nav ul li a {
+        text-decoration: none;
+        color: #000000;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    nav ul li a:hover {
+        color: #ff7700;
+        transition: color 0.3s ease;
+    }
+
+    .menu-amburger {
+        display: none;
+    }
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: auto;
+        padding: 20px;
+    }
+}
