@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+@media screen and (max-width: 700px){/* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -107,7 +107,6 @@ header h1{
     color: #000000;
     font-weight: bold;
     text-align: center ;
-
 }
 .header-elements{
     display: flex;
@@ -196,4 +195,5 @@ footer p{
 }
 #year, #last-modified{
     color :#d4ff00;
+}
 }
