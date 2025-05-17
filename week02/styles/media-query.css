@@ -1,0 +1,33 @@
+body{
+    font-family: Roboto; 
+    color: white;  
+}
+header{
+    max-width: 640px;
+    margin: 1 rem auto;
+    border: 3px solid #d3fa5e;
+    padding: 1 rem;
+    background-color: black;
+}
+main{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1 rem;
+  max-width: 640px;
+    margin: 1 rem auto;
+    border: 3px solid #d3fa5e;
+    padding: 1 rem;
+    background-color: black;
+}
+section{
+    padding: 1rem;
+    background-color: #fff;
+    color:black;
+}
+footer{
+    max-width: 640px;
+    margin: 1 rem auto;
+    border: 3px solid #d3fa5e;
+    padding: 1 rem;
+    background-color: black;
+}
