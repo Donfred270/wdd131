@@ -6,10 +6,47 @@
     <meta name="description" content="A simple HTML document">
     <meta name="author" content="Donfred Vallon">
     <link rel="stylesheet" href="styles/places.css">
-    <script src="scripts/places.js" defer></script>
+    <script src="script/places.js" defer></script>
     <title>Country Page</title>
 </head>
 <body>
-    
+    <header>
+        <h1>HAÏTI</h1>
+        <div class="line"></div>
+    </header>
+    <main>
+        <picture>
+            <source srcset="images/citadelle-small.webp" media="(max-width: 480px)">
+            <source srcset="images/citadelle-medium.webp" media="(max-width: 800px)">
+            <img src="images/citadelle-large.webp" alt="Panoramic view of Citadelle Laferrière, a historic landmark symbolizing the Haitian Revolution, located in the northern mountains of Haiti.">
+        </picture>
+        <div class="data">
+            <h2 class="heading">Data</h2>
+            <div class="data-value">
+                <p><span class="values">Area:</span> 27,750 km²</p>
+                <p><span class="values">Population:</span> 11,4 millions</p>
+                <p><span class="values">Capital:</span> Port-au-prince</p>
+                <p><span class="values">Languages:</span> French and Créole</p>
+                <p><span class="values">Currency:</span> Gourdes(HTG)</p>
+                <p><span class="values">Time Zone:</span> UTC-5</p>
+                <p><span class="values">Calling Code:</span> +509</p>
+                <p><span class="values">Internet TLD:</span> .ht</p>
+            </div>
+        </div>
+        
+        <div class="weather">
+            <h2>Weather<span class="cloud">⛅</span></h2>
+            <div class="weather-value">
+                <p><span class="weather-values">Temperature:</span> 10°C</p>
+                <p><span class="weather-values">Conditions:</span> Partly Cloudy</p>
+                <p><span class="weather-values">Wind:</span> 5 Km/h</p>
+                <p><span class="weather-values">Wind Chill:</span> 9.8°C</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>©<span id="year"></span>✅ Donfred Vallon ✅ Haiti</p>
+        <p>Last Modification : <span id="last-modified"></span></p>
+    </footer>
 </body>
 </html>
