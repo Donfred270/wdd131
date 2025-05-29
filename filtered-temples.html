@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Temple Album - A collection of beautiful temples">
+    <meta name="author" content="Donfred Vallon">   
+    <title>Temple Album</title>
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <!-- Link to the mobile-first CSS file -->
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+
+    <!-- Link to the larger screen CSS file -->
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+
+    <!-- Defer the script to load after the page content -->
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-elements">
+            <h1>Temple Album</h1>
+            <div class="menu-amburger" id="hamburger-menu">
+                <div class="amburger"></div>
+                <div class="amburger"></div>
+                <div class="amburger"></div>
+            </div>
+        </div>
+        <nav id="nav-bar" class="hidden">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Old</a></li>
+                <li><a href="#">New</a></li>
+                <li><a href="#">Large</a></li>
+                <li><a href="#">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Our Beautiful Temples</h2>
+
+        <div class="temple-container">
+           
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span>🎉Donfred Vallon🎉. All Rights Reserved.</p>
+        <p>Last Modified: <span id="last-modified"></span></p>
+    </footer>
+</body>
+
+</html>
