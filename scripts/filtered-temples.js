@@ -101,6 +101,8 @@ const temples = [
   },
 ];
 
+createTempleCard();
+
 function createTempleCard(){
     temples.forEach(temple =>{
         let card = document.createElement("section");
