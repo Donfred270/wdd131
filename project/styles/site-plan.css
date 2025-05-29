@@ -1,0 +1,36 @@
+*{
+    font-family: poppins;
+}
+h1{
+    text-align: center;
+    margin: 20px;
+}
+
+section{
+    background-color: bisque;
+    margin: 50px;
+    padding: 20px;
+    border-radius: 5px ;
+}
+span{
+    font-weight: bold;
+}
+img{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+.color-schema{
+    display: flex;
+    justify-content: space-around;
+}
+.black{
+    background-color: black;
+    width: 50px;
+    height: 20px;
+}
+.white{
+    background-color: rgb(255, 255, 255);
+    width: 50px;
+    height: 20px;
+}
