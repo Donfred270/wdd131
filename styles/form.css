@@ -1,0 +1,93 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f2f2f2;
+  margin: 0;
+  padding: 20px;
+}
+
+.review-container {
+  background-color: #e8dbe9;
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+h2 {
+  background-color: #36002f;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  margin-top: 0;
+  border-radius: 5px 5px 0 0;
+}
+
+label, legend {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+select, input[type="date"], textarea, input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 4px;
+  border: 1px solid #aaa;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.stars label {
+  display: inline-block;
+  margin-right: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+fieldset {
+  border: none;
+  margin-top: 10px;
+  padding: 0;
+}
+
+fieldset label {
+  display: block;
+  margin-top: 5px;
+  font-weight: normal;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #eee;
+  border: 1px solid #999;
+  border-radius: 5px;
+  margin-top: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ddd;
+}
+
+.optional {
+  font-weight: normal;
+  font-size: 0.9em;
+  color: #555;
+}
+
+footer {
+  background-color: #36002f;
+  color: white;
+  text-align: center;
+  font-size: 0.85em;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 0 0 5px 5px;
+}
