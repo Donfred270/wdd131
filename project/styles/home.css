@@ -47,18 +47,88 @@ table {
 	border-spacing: 0;
 }
 
+@font-face {
+  font-family: 'Satoshi';
+  src: url('../fonts/Satoshi-Light.woff2') format('woff2'),
+       url('../fonts/Satoshi-Light.woff') format('woff'),
+       url('../fonts/Satoshi-Light.ttf') format('truetype');
+       font-weight: 300;
+       font-display: swap;
+       font-style: normal;
+}
 
 @font-face {
-    font-family: IntegralCF;
+  font-family: 'Satoshi';
+  src: url('../fonts/Satoshi-LightItalic.woff2') format('woff2'),
+       url('../fonts/Satoshi-LightItalic.woff') format('woff'),
+       url('../fonts/Satoshi-LightItalic.ttf') format('truetype');
+       font-weight: 300;
+       font-display: swap;
+       font-style: italic;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('../fonts/Satoshi-Regular.woff2') format('woff2'),
+       url('../fonts/Satoshi-Regular.woff') format('woff'),
+       url('../fonts/Satoshi-Regular.ttf') format('truetype');
+       font-weight: 400;
+       font-display: swap;
+       font-style: normal;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('../fonts/Satoshi-Medium.woff2') format('woff2'),
+       url('../fonts/Satoshi-Medium.woff') format('woff'),
+       url('../fonts/Satoshi-Medium.ttf') format('truetype');
+       font-weight: 500;
+       font-display: swap;
+       font-style: normal;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('../fonts/Satoshi-MediumItalic.woff2') format('woff2'),
+       url('../fonts/Satoshi-MediumItalic.woff') format('woff'),
+       url('../fonts/Satoshi-MediumItalic.ttf') format('truetype');
+       font-weight: 500;
+       font-display: swap;
+       font-style: italic;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('../fonts/Satoshi-Black.woff2') format('woff2'),
+       url('../fonts/Satoshi-Black.woff') format('woff'),
+       url('../fonts/Satoshi-Black.ttf') format('truetype');
+       font-weight: 900;
+       font-display: swap;
+       font-style: normal;
+}
+
+@font-face {
+  font-family: 'Satoshi';
+  src: url('../fonts/Satoshi-Bold.woff2') format('woff2'),
+       url('../fonts/Satoshi-Bold.woff') format('woff'),
+       url('../fonts/Satoshi-Bold.ttf') format('truetype');
+       font-weight: 700;
+       font-display: swap;
+       font-style: normal;
+}
+
+
+@font-face {
+    font-family: "IntegralCF";
     src: local("integralcf"),
-    url(../fonts/integralcf-regular.otf) format("opentype");
+    url(../fonts/integralcf-bold-webfont.woff) format("opentype");
     font-weight: 400;
     font-style: Normal;
 }
 @font-face {
     font-family: "IntegralCF";
     src: local("integralcf"),
-    url(../fonts/integralcf-bold.otf) format("opentype");
+    url(../fonts/integralcf-bold-webfont.woff) format("opentype");
     font-weight: 700;
     font-style: Normal;
 	text-transform: uppercase;
@@ -71,18 +141,15 @@ table {
   text-transform: uppercase;
   color: black;
 }
-.subheading-style {
-  font-family: 'integralcf', sans-serif;
-  font-size: 48px;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
+/*global variables*/
 :root{
     --main-color : black;
 	--secondary-color: white;
 	--primary-font: 'integralcf', sans-serif;
-	--secondary-font: 'poppins', sans-serif;
+	--secondary-font: 'Satoshi', sans-serif;
+	--light-gray: rgba(0, 0, 0, 0.4);
+	--percentage-color-text: rgb(255, 51, 51);
+	--percentage-color-box: rgba(255, 51, 51, 0.1);
 }
 /*custom style*/
 .promo-bar{
@@ -168,7 +235,7 @@ nav ul li{
 	font-size: 16px;
 	font-style: normal;
 	color: var(--main-color);
-	margin: 30px 0; ;
+	margin: 40px 0; ;
 }
 
 .shop-now{
@@ -181,7 +248,180 @@ nav ul li{
 	font-weight: 500;
 	padding: 15px 70px;
 }
+.stats{
+	margin-top: 50px;
+	display: flex;
+	justify-content: space-between;
+	font-family: var(--secondary-font);
+}
+.stat h2{
+	font-size: 40px;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+.icon1{
+	position: absolute;
+	top: 240px;
+	right: 100px;
+}
+.icon2{
+	position: absolute;
+	top: 54%;
+	right: 46%;
+}
+.brands{
+	margin-top: -2px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	background-color: var(--main-color);
+}
+.brands img{
+	margin: 50px 0;
+}
 
+.new-arrivals h2, .top-selling h2{
+ text-align: center;
+ font-family: var(--primary-font);
+ font-size: 48px;
+ margin:90px 0 60px;
+}
+.product-grid{
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	gap: 20px;
+	padding: 0 100px;
+}
+.new-arrivals h3, .top-selling h3{
+	font-family: var(--secondary-font);
+	font-size: 20px;
+	font-weight: bold;
+	color: var(--main-color);
+	margin-top: 16px;
+}
+.product-rate{
+	display: flex;
+	font-family: var(--secondary-font);
+	font-size: 14px;
+	justify-content: flex-start;
+	align-items: center;
+	margin: 14px 0;
+}
+.product-rate img{
+	width: 16px;
+	height: 16px;
+	margin-right: 5px;
+}
+.double-price{
+	display: flex;
+	align-items: center;
+	font-family: var(--secondary-font);
+}
+.new-price{
+	font-size: 16px;
+	font-weight: bold;
+	color: var(--main-color);
+	margin-right: 10px;
+}
+.old-price{
+	font-size: 16px;
+	font-weight: bold;
+	color: var(--light-gray);
+	margin-right: 10px;
+	text-decoration: line-through;
+}
+.percentage{
+	font-size: 12px;
+	font-weight: bold;
+	color: var(--percentage-color-text);
+	background-color: var(--percentage-color-box);
+	padding: 5px 10px;
+	border-radius: 50px;
+}
+
+.single-price{
+	font-family: var(--secondary-font);
+	font-size: 16px;
+	font-weight: bold;
+	color: var(--main-color);
+	margin-right: 10px;
+}
+.view-all-btn{
+	background-color: var(--secondary-color);
+	color: var(--main-color);
+	border-radius: 50px;
+	border: var(--light-gray) 1px solid;
+	font-family: var(--secondary-font);
+	font-size: 16px;
+	font-weight: 500;
+	padding: 15px 80px;
+	margin: 50px auto;
+	display: block;
+	text-align: center;
+}
+hr{
+	border: none;
+	height: 1px;
+	background-color: var(--light-gray);
+	margin: 100px 100px;
+}
+.browse-dress{
+	background-color: #F0F0F0;
+	margin: 75px 100px 100px 100px;
+	border-radius: 40px;
+	padding: 85px 65px 65px 65px;
+}
+.browse-dress h3{
+	font-family: var(--primary-font);
+	font-size: 48px;
+	margin-bottom: 30px;
+	text-align: center;
+}
+.dress{
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.dress img{
+	border-radius: 20px;
+	margin: 10px;
+}
+
+.dress img:hover{
+	transform: scale(1.05);
+	transition: transform 0.3s ease;
+}
+.styles{
+	font-family: var(--secondary-font);
+	font-size: 28px;
+	color: var(--main-color);
+	font-weight: bold;
+}
+
+.styles p{
+	position: relative;
+	top: 60px;
+	left: 35px;
+	z-index: 1;	
+}	
+
+.review h3{
+	font-family: var(--primary-font);
+	font-size: 48px;
+	margin-left: 100px;
+	margin-bottom: 45px;
+	text-align: left;
+}
+.review-card{
+	background-color: rgba(0, 0, 0, 0.01);
+	border-radius: 20px;
+	padding: 30px;
+	margin: 20px;
+	border: solid, 1px 
+}
 
 
 

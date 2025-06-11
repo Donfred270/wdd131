@@ -59,17 +59,17 @@
             <div class="header-img">
                 <img src="./images/banner_header.jpg" alt="header image" class="header-image" width="100%">
                 <div class="header-icons">
-                    <img src="./icons/magic.svg" alt="heart icon" class="heart-icon" width="104">
-                    <img src="./icons/magic.svg" alt="share icon" class="share-icon" width="56">
+                    <img src="./icons/magic.svg" alt="heart icon" class="icon1" width="95">
+                    <img src="./icons/magic.svg" alt="share icon" class="icon2" width="56">
                 </div>
             </div>
         </div>
         <div class="brands">
-            <img src="./logos/versace.jpg" alt="versace logo" width="100">
-            <img src="./logos/zara-logo.jpg" alt="Zara logo" width="100">
-            <img src="./logos/gucci-logo.png" alt="Gucci logo" width="100">
-            <img src="./logos/prada-logo.png" alt="Prada logo" width="100">
-            <img src="./logos/calvin.png" alt="calvin logo" width="100">
+            <img src="./logos/versace.png" alt="versace logo" width="167">
+            <img src="./logos/zara.png" alt="Zara logo" width="91">
+            <img src="./logos/gucci-logo.png" alt="Gucci logo" width="156">
+            <img src="./logos/prada-logo.png" alt="Prada logo" width="194">
+            <img src="./logos/calvin.png" alt="calvin logo" width="207">
         </div>
     </header>
 
@@ -79,7 +79,7 @@
 
             <!--put each product in a div-->
             <div class="product-grid">
-                <div class="product-card">
+                <div class="product-card-1">
                     <img src="./images/t_shirt.jpg" alt="Product 1" class="product-image" width="295">
                     <h3>T-shirt with Tape Details</h3>
                     <div class="product-rate">
@@ -90,23 +90,25 @@
                         <img src="./icons/mid_fill_star.svg" alt="fill star">
                         <p>4.5/5</p>
                     </div>
-                    <p>$120</p>
-
+                    <p class="single-price">$120</p>
+                </div>
+                <div class="product-card-2">
                      <img src="./images/skinny_jeans_fit.jpg" alt="Product 1" class="product-image" width="295">
                     <h3>Skinny Fit Jeans</h3>
                     <div class="product-rate">
                         <img src="./icons/fill_star.svg" alt="fill star">
                         <img src="./icons/fill_star.svg" alt="fill star">
-                        <img src="./icons/fill_star.svg" alt="fill star">
                         <img src="./icons/mid_fill_star.svg" alt="fill star">
+                        <p>3.5/5</p>
                     </div>
                     <div class="double-price">
-                        <p class="old-price">$240</p>
                         <p class="new-price">$260</p>
+                        <p class="old-price">$240</p>
                         <p class="percentage">-20%</p>
                     </div>
-
-                     <img src="./images/checkered_shirt.jpg" alt="Product 1" class="product-image" width="295">
+                </div>
+                <div class="product-card-3">
+                    <img src="./images/checkered_shirt.jpg" alt="Product 1" class="product-image" width="295">
                     <h3>Checkered Shirt</h3>
                     <div class="product-rate">
                         <img src="./icons/fill_star.svg" alt="fill star">
@@ -116,8 +118,9 @@
                         <img src="./icons/mid_fill_star.svg" alt="fill star">
                         <p>4.5/5</p>
                     </div>
-                    <p>$180</p>
-
+                    <p class="single-price">$180</p>
+                </div>
+                <div class="product-card-4">
                      <img src="./images/sleeve_striped_tshirt.jpg" alt="Product 1" class="product-image" width="295">
                     <h3>sleeve Striped T-shirt</h3>
                     <div class="product-rate">
@@ -129,18 +132,22 @@
                         <p>4.5/5</p>
                     </div>
                      <div class="double-price">
-                        <p class="old-price">$130</p>
                         <p class="new-price">$160</p>
+                        <p class="old-price">$130</p>
                         <p class="percentage">-30%</p>
                     </div>
-                    <p class="view-all">View all</p>
+                </div>
+            </div>
+            <button class="view-all-btn">View all</button>
+            <hr>
         </section>
 
 
         <!-- section for top selling -->
         <section class="top-selling">
+            <h2>Top selling</h2>
              <div class="product-grid">
-                <div class="product-card">
+                <div class="product-card-1">
                     <img src="./images/t_shirt.jpg" alt="Product 1" class="product-image" width="295">
                     <h3>T-shirt with Tape Details</h3>
                     <div class="product-rate">
@@ -151,8 +158,9 @@
                         <img src="./icons/mid_fill_star.svg" alt="fill star">
                         <p>4.5/5</p>
                     </div>
-                    <p>$120</p>
-
+                    <p class="single-price">$120</p>
+                </div>
+                <div class="product-card-2">
                      <img src="./images/skinny_jeans_fit.jpg" alt="Product 1" class="product-image" width="295">
                     <h3>Skinny Fit Jeans</h3>
                     <div class="product-rate">
@@ -162,11 +170,12 @@
                         <img src="./icons/mid_fill_star.svg" alt="fill star">
                     </div>
                     <div class="double-price">
-                        <p class="old-price">$240</p>
                         <p class="new-price">$260</p>
+                        <p class="old-price">$240</p>
                         <p class="percentage">-20%</p>
                     </div>
-
+                </div>
+                <div class="product-card-3">
                      <img src="./images/checkered_shirt.jpg" alt="Product 1" class="product-image" width="295">
                     <h3>Checkered Shirt</h3>
                     <div class="product-rate">
@@ -177,8 +186,9 @@
                         <img src="./icons/mid_fill_star.svg" alt="fill star">
                         <p>4.5/5</p>
                     </div>
-                    <p>$180</p>
-
+                    <p class="single-price">$180</p>
+                </div>
+                <div class="product-card-4">
                      <img src="./images/sleeve_striped_tshirt.jpg" alt="Product 1" class="product-image" width="295">
                     <h3>sleeve Striped T-shirt</h3>
                     <div class="product-rate">
@@ -190,30 +200,33 @@
                         <p>4.5/5</p>
                     </div>
                      <div class="double-price">
-                        <p class="old-price">$130</p>
                         <p class="new-price">$160</p>
+                        <p class="old-price">$130</p>
                         <p class="percentage">-30%</p>
                     </div>
+                </div>
+            </div>
+            <button class="view-all-btn">View all</button>
         </section>
 
         <section class="browse-dress">
             <h3>BROWSE BY DRESS STYLE</h3>
             <div class="dress">
-                <div class="casual">
-                    <p>casual</p>
-                    <img src="./images/casual.jpg" alt="a man with a casual t-shirt">
+                <div class="styles">
+                    <p>Casual</p>
+                    <img src="./images/casual.jpg" alt="a man with a casual t-shirt" width="407">
                 </div>
-                 <div class="Formal">
-                    <p>casual</p>
-                    <img src="./images/formal.png" alt="a man with suits">
+                 <div class="styles">
+                    <p>Formal</p>
+                    <img src="./images/formal.png" alt="a man with suits" width="684">
                 </div>
-                 <div class="casual">
-                    <p>casual</p>
-                    <img src="./images/party.png" alt="a woman dress for partying">
+                 <div class="styles">
+                    <p>Party</p>
+                    <img src="./images/party.png" alt="a woman dress for partying" width="684">
                 </div>
-                 <div class="casual">
-                    <p>casual</p>
-                    <img src="./images/gym.png" alt="a woman at gym">
+                 <div class="styles">
+                    <p>Gym</p>
+                    <img src="./images/gym.png" alt="a woman at gym" width="407" height="309px">
                 </div>
             </div>
         </section>
