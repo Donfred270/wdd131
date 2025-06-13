@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shop.co | Home page</title>
-    <link rel="stylesheet" href="./styles/home.css">
+    <!--<link rel="stylesheet" href="./styles/home.css">-->
+    <link rel="stylesheet" href="./styles/home_small.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 <body>
     <header>
@@ -16,23 +19,34 @@
             <img src="./icons/no-.svg" alt="x icon">
         </div>
         <nav>
+            <div class="logo-hamberger">
+            <div class="hamberger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+
             <img src="./logos/shop_logo.svg" alt="website logo" class="logo" width="160">
-            <ul>
+            </div>
+            <ul class="nav-menu">
                 <li class="shop"><a href="#">Shop</a><img src="./icons/drop.svg" alt="drop down icon" class="drop-down" width="16"></li>
                 <li><a href="#">On Sale</a></li>
                 <li><a href="#">New Arrivals</a></li>
                 <li><a href="#">Brands</a></li>
             </ul>
             <div class="search-bar">
-                <img src="./icons/search.svg" alt="search icon" class="search-icon" width="24">
+                <img src="./icons/search.svg" alt="search icon" class="search-icon" width="24" background-color="000">
                 <input class="search-input" placeholder="Search for products">
             </div>
             <div class="shop-user">
+                <div class="search">
+                    <img src="./icons/vector.svg" alt="search icon" width="24" color="000">
+                </div>
                 <div class="cart">
                     <img src="./icons/cart.svg" alt="cart icon" class="cart-icon" width="24">
                 </div>
                 <div class="user">
-                    <img src="./icons/account.svg" alt="user icon" class="user-icon" width="20">
+                    <img src="./icons/account.svg" alt="user icon" class="user-icon" width="24">
                 </div>
             </div>
         </nav>
@@ -46,23 +60,27 @@
                         <h2>200+</h2>
                         <p>International Brands</p>
                     </div>
+                    <div class="divider-vertical"></div>
                     <div class="stat">
                         <h2>2,000+</h2>
                         <p>High-quality Products</p>
                     </div>
-                    <div class="stat">
+                    <div class="divider-vertical"></div>
+                    <div class="stat" class="number">
                         <h2>30,000+</h2>
                         <p>Happy Customers</p>
                     </div>
                 </div>
             </div>
-            <div class="header-img">
-                <img src="./images/banner_header.jpg" alt="header image" class="header-image" width="100%">
+            <picture>
+                <source media="(min-width: 769px)" srcset="./images/header_image_small.png">
+                <source media="(max-width: 540px)" srcset="images/header-phone.png" >
+                <img src="./images/header_image.png" alt="images/banner-header.jpg" style="width:100%;">
+            </picture>
                 <div class="header-icons">
-                    <img src="./icons/magic.svg" alt="heart icon" class="icon1" width="95">
-                    <img src="./icons/magic.svg" alt="share icon" class="icon2" width="56">
+                    <img src="./icons/magic.svg" alt="heart icon" class="icon1">
+                    <img src="./icons/magic.svg" alt="share icon" class="icon2">
                 </div>
-            </div>
         </div>
         <div class="brands">
             <img src="./logos/versace.png" alt="versace logo" width="167">
@@ -77,7 +95,7 @@
         <section class="new-arrivals">
             <h2>New Arrivals</h2>
 
-            <!--put each product in a div-->
+            <!--each product in a div-->
             <div class="product-grid">
                 <div class="product-card-1">
                     <img src="./images/t_shirt.jpg" alt="Product 1" class="product-image" width="295">
@@ -214,19 +232,19 @@
             <div class="dress">
                 <div class="styles">
                     <p>Casual</p>
-                    <img src="./images/casual.jpg" alt="a man with a casual t-shirt" width="407">
+                    <img src="./images/casual.png" alt="a man with a casual t-shirt"  class="clipped-image">
                 </div>
                  <div class="styles">
                     <p>Formal</p>
-                    <img src="./images/formal.png" alt="a man with suits" width="684">
+                    <img src="./images/formal.png" alt="a man with suits" width="684" class="clipped-image">
                 </div>
                  <div class="styles">
                     <p>Party</p>
-                    <img src="./images/party.png" alt="a woman dress for partying" width="684">
+                    <img src="./images/party.png" alt="a woman dress for partying" width="684" class="clipped-image">
                 </div>
                  <div class="styles">
                     <p>Gym</p>
-                    <img src="./images/gym.png" alt="a woman at gym" width="407" height="309px">
+                    <img src="./images/gym.png" alt="a woman at gym" width="407" height="309px" class="clipped-image">
                 </div>
             </div>
         </section>
@@ -245,7 +263,7 @@
                     <img src="./icons/fill_star.svg" alt="an icon of a star revier">
                     <img src="./icons/fill_star.svg" alt="an icon of a star revier">
                 </div>
-                <p class="reviewer">Sarah M. ✅</p>
+                <p class="reviewer">Sarah M.<img src="./icons/green-check.svg" alt="green-check" width="24"></p>
                 <p class="review-content">
                     "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”
                 </p>
@@ -259,7 +277,7 @@
                     <img src="./icons/fill_star.svg" alt="an icon of a star revier">
                     <img src="./icons/fill_star.svg" alt="an icon of a star revier">
                 </div>
-                <p class="reviewer">Sarah M. ✅</p>
+                <p class="reviewer">Sarah M.<img src="./icons/green-check.svg" alt="green-check" width="24"></p>
                 <p class="review-content">
                     "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”
                 </p>
@@ -273,49 +291,7 @@
                     <img src="./icons/fill_star.svg" alt="an icon of a star revier">
                     <img src="./icons/fill_star.svg" alt="an icon of a star revier">
                 </div>
-                <p class="reviewer">Sarah M. ✅</p>
-                <p class="review-content">
-                    "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”
-                </p>
-            </div>
-
-            <div class="review-card">
-                <div class="star">
-                    <img src="./icons/fill_star.svg" alt="an icon of a star revier">
-                    <img src="./icons/fill_star.svg" alt="an icon of a star revier">
-                    <img src="./icons/fill_star.svg" alt="an icon of a star revier">
-                    <img src="./icons/fill_star.svg" alt="an icon of a star revier">
-                    <img src="./icons/fill_star.svg" alt="an icon of a star revier">
-                </div>
-                <p class="reviewer">Sarah M. ✅</p>
-                <p class="review-content">
-                    "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”
-                </p>
-            </div>
-
-            <div class="review-card">
-                <div class="star">
-                    <img src="./icons/fill_star.svg" alt="an icon of a star revier">
-                    <img src="./icons/fill_star.svg" alt="an icon of a star revier">
-                    <img src="./icons/fill_star.svg" alt="an icon of a star revier">
-                    <img src="./icons/fill_star.svg" alt="an icon of a star revier">
-                    <img src="./icons/fill_star.svg" alt="an icon of a star revier">
-                </div>
-                <p class="reviewer">Sarah M. ✅</p>
-                <p class="review-content">
-                    "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”
-                </p>
-            </div>
-
-            <div class="review-card">
-                <div class="star">
-                    <img src="./icons/fill_star.svg" alt="an icon of a star revier">
-                    <img src="./icons/fill_star.svg" alt="an icon of a star revier">
-                    <img src="./icons/fill_star.svg" alt="an icon of a star revier">
-                    <img src="./icons/fill_star.svg" alt="an icon of a star revier">
-                    <img src="./icons/fill_star.svg" alt="an icon of a star revier">
-                </div>
-                <p class="reviewer">Sarah M. ✅</p>
+                <p class="reviewer">Sarah M.<img src="./icons/green-check.svg" alt="green-check" width="24"></p>
                 <p class="review-content">
                     "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”
                 </p>
@@ -324,64 +300,72 @@
         </section>
                
     </main>
-
-    <footer>
-        <div class="cta-box">
+    <div class="cta-box">
             <p class="cta-text">STAY UP TO DATE ABOUT OUR LATEST OFFERS</p>
             <form action="#" method="post">
-                <label for="mail"><img src="./icons/mail.svg" alt="mail-icon"></label>
-                <input type="email" id="mail" name="user_mail" value="Enter your email address">
+                <label for="mail" class="img"><img src="./icons/mail.svg" alt="mail-icon"></label>
+                <input type="email" id="mail" name="user_mail" value="" placeholder="Enter your email address">
                 <button type="submit">Subscribe to Newsletter</button>
             </form>
-        </div>
+    </div>
+    <footer>
+        
 
         <div class="footer-content">
-            <div class="first-row">
+            <div class="first-row" class="row">
                 <img src="./logos/shop_logo.svg" alt="Shop.co logo">
                 <p>We have cothes that suits your style and which you're proud to wear. From women to men.</p>
                 <div class="social-media">
-                    <img src="./icons/x.svg" alt="x logo">
-                    <img src="./icons/facebook.svg" alt="facebook logo">
-                    <img src="./icons/ig.svg" alt="instagram logo">
-                    <img src="./icons/github.svg" alt="github logo">
+                    <a href="x.com"><img src="./icons/x.svg" alt="x logo"></a>
+                    <a href="facebook.com"><img src="./icons/facebook.svg" alt="facebook logo"></a>
+                    <a href="instagram.com"><img src="./icons/ig.svg" alt="instagram logo"></a>
+                    <a href="github.com"><img src="./icons/github.svg" alt="github logo"></a>
                 </div>
             </div>
 
-            <div class="second-row">
-                <h3>COMPANY</h3>
-                <P>About</P>
-                <P>Features</P>
-                <P>Works</P>
-                <P>Career</P>
+            <div class="row">
+                <ul>
+                    <li class="head"><a href="">COMPANY</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Features</a></li>
+                    <li><a href="">Works</a></li>
+                    <li><a href="">Career</a></li>
+                </ul>
             </div>
 
-            <div class="second-row">
-                <h3>HELP</h3>
-                <P>Customer Support</P>
-                <P>Delivery details</P>
-                <P>Terms & Conditions</P>
-                <P>privacy Policy</P>
+            <div class="row">
+                 <ul>
+                    <li class="head"><a href="">HELP</a></li>
+                    <li><a href="">Customer Support</a></li>
+                    <li><a href="">Delivery details</a></li>
+                    <li><a href="">Terms & Conditions</a></li>
+                    <li><a href="">privacy Policy</a></li>
+                </ul>
             </div>
 
-             <div class="third-row">
-                <h3>FAQ</h3>
-                <P>Account</P>
-                <P>Manage deliveries</P>
-                <P>Orders</P>
-                <P>Payments</P>
+             <div class="row">
+                 <ul>
+                    <li class="head"><a href="">FAQ</a></li>
+                    <li><a href="">Account</a></li>
+                    <li><a href="">Manage deliveries</a></li>
+                    <li><a href="">Orders</a></li>
+                    <li><a href="">Payments</a></li>
+                </ul>
             </div>
 
-            <div class="third-row">
-                <h3>Ressources</h3>
-                <P>Free eBooks</P>
-                <P>Development Tutorial</P>
-                <P>How to - Blog</P>
-                <P>Youtube Playlist</P>
+            <div class="row">
+                 <ul>
+                    <li class="head"><a href="">RESSOURCES</a></li>
+                    <li><a href="">Free eBooks</a></li>
+                    <li><a href="">Development Tutorial</a></li>
+                    <li><a href="">How to - Blog</a></li>
+                    <li><a href="">Youtube Playlist</a></li>
+                </ul>
             </div>
         </div>
-        <hr>
+        <hr class="footer-hr">
         <div class="footer-copyright">
-            <p class="copyright">Shop.co ©2000-<span id="current-year"></span>. All Right Reserved</p>
+            <p class="copyright">Shop.co-<span id="current-year"></span>. All Right Reserved</p>
             <div class="footer-card">
                 <img src="./icons/visa.png" alt="card">
                 <img src="./icons/mastercard.png" alt="card">
@@ -391,6 +375,7 @@
             </div>
         </div>
     </footer>
+    <script src="./script/home.js" defer></script>
     
 </body>
 </html>
