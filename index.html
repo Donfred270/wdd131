@@ -2,69 +2,381 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals - Donfred vallon">
-    <meta name="author" content="Donfred vallon">
-    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shop.co | Home page</title>
+    <link rel="stylesheet" href="./styles/home.css">
+    <!--<link rel="stylesheet" href="./styles/home_small.css">-->
+    <!--<link rel="stylesheet" href="./styles/home_medium.css">-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <title>WDD 131 – Dynamic Web Fundamentals - Donfred vallon</title>
-    <link rel="stylesheet" href="./styles/base.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 <body>
     <header>
-        <h1>WDD 131: Dynamic Web Fundamentals - Donfred Vallon</h1>
+        <div class="promo-bar">
+            <p>Sign up and get 20% off to your first order. <a href="#">Sign Up now</a></p>
+            <img src="./icons/no-.svg" alt="x icon">
+        </div>
         <nav>
-            <ul>
-                <li><a href="https://www.linkedin.com/in/donfred-vallon-0539ab1a6/" target="_blank" rel="noopener noreferrer">linkedin</a></li>
-                <li><a href="https://byupw.instructure.com/" target="_blank" rel="noopener noreferrer">Canvas</a></li>
-                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/nt/matt/7?lang=fra" target="_blank" rel="noopener noreferrer">Scripture</a></li>
-                <li><a href="#" target="_blank" rel="noopener noreferrer">Final project</a></li>
+            <div class="logo-hamberger">
+            <div class="hamberger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+
+            <img src="./logos/shop_logo.svg" alt="website logo" class="logo" width="160">
+            </div>
+            <ul class="nav-menu">
+                <li class="shop"><a href="#">Shop</a><img src="./icons/drop.svg" alt="drop down icon" class="drop-down" width="16"></li>
+                <li><a href="#">On Sale</a></li>
+                <li><a href="#">New Arrivals</a></li>
+                <li><a href="#">Brands</a></li>
             </ul>
+            <div class="search-bar">
+                <img src="./icons/search.svg" alt="search icon" class="search-icon" width="24" background-color="000">
+                <input class="search-input" placeholder="Search for products">
+            </div>
+            <div class="shop-user">
+                <div class="search">
+                    <img src="./icons/vector.svg" alt="search icon" width="24" color="000">
+                </div>
+                <div class="cart">
+                    <img src="./icons/cart.svg" alt="cart icon" class="cart-icon" width="24">
+                </div>
+                <div class="user">
+                    <img src="./icons/account.svg" alt="user icon" class="user-icon" width="24">
+                </div>
+            </div>
         </nav>
+        <div class="header-content">
+            <div class="header-text">
+                <h1 class="heading-style">FIND CLOTHES THAT MATCHES YOUR STYLE</h1>
+                <P>Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality and cater to your sense of style.</P>
+                <button class="shop-now">Shop Now</button>
+                <div class="stats">
+                    <div class="stat">
+                        <h2>200+</h2>
+                        <p>International Brands</p>
+                    </div>
+                    <div class="divider-vertical"></div>
+                    <div class="stat">
+                        <h2>2,000+</h2>
+                        <p>High-quality Products</p>
+                    </div>
+                    <div class="divider-vertical"></div>
+                    <div class="stat" class="number">
+                        <h2>30,000+</h2>
+                        <p>Happy Customers</p>
+                    </div>
+                </div>
+            </div>
+            <picture>
+                <source media="(min-width: 600px)" srcset="images/banner-header.jpg">
+                <source media="(max-width: 599px)" srcset="images/header-phone.png" >
+                <img src="images/banner-header.jpg" alt="images/banner-header.jpg" style="width:100%;">
+            </picture>
+                <div class="header-icons">
+                    <img src="./icons/magic.svg" alt="heart icon" class="icon1">
+                    <img src="./icons/magic.svg" alt="share icon" class="icon2">
+                </div>
+        </div>
+        <div class="brands">
+            <img src="./logos/versace.png" alt="versace logo" width="167">
+            <img src="./logos/zara.png" alt="Zara logo" width="91">
+            <img src="./logos/gucci-logo.png" alt="Gucci logo" width="156">
+            <img src="./logos/prada-logo.png" alt="Prada logo" width="194">
+            <img src="./logos/calvin.png" alt="calvin logo" width="207">
+        </div>
     </header>
 
     <main>
-        <div class="section">
-            <section class="card">
-                <h2 class="about-me">About me</h2>
-                <div class="card-content">
-                    <p class="bio">Hello, my name is Donfred Vallon. I am a self-taught graphic designer, video editor, and UI/UX developer, passionate about creating innovative visual solutions. I love transforming ideas into concrete concepts using a combination of creative and technical tools, while keeping up with the latest design and technology trends. My goal is to help clients build strong and impactful brands, with a focus on user experience and seamless interfaces. I am also a software development student, looking to expand my skills in programming and mobile app development.</p>
-                    <img class="profile" src="./images/profile.jpg" alt="Donfred Vallon">
-                </div>
-            </section>
-            <section class="card">
-                <div class="city">
-                    <h2>Pétion-ville, Haïti</h2>
-                    <hr>
-                </div>
-                <div class="card-content1">
-                    <img class="flag" src="./images/flag.png" alt="Haiti Flag">
-                    <p class="haiti">Haiti, located on the Caribbean island of Hispaniola, boasts a rich history and vibrant culture. Known for its resilience, the country has faced many challenges but continues to showcase its strength through its people. From beautiful beaches to mountainous terrains, Haiti blends African, French, and indigenous influences in its art, music, and traditions. Despite its struggles, Haiti remains a symbol of hope and strength.</p>
-                </div>
-            </section>
-        </div>
-        <aside>
-            <h2 class="ressources">Web dev Ressources</h2>
-            <div class="ressources-web">   
-                <ul>
-                    <li><a href="https://www.w3schools.com/html/" target="_blank" rel="noopener noreferrer">HTML Ressources</a></li>
-                    <li><a href="https://www.w3schools.com/css/" target="_blank" rel="noopener noreferrer">CSS Ressources</a></li>
-                    <li><a href="https://www.w3schools.com/js/" target="_blank" rel="noopener noreferrer">JavaScript Ressources</a></li>
-                    <li><a href="https://www.w3schools.com/php/" target="_blank" rel="noopener noreferrer">PHP Ressources</a></li>
-                    <li><a href="https://www.w3schools.com/sql/" target="_blank" rel="noopener noreferrer">SQL Ressources</a></li>
-                    <li><a href="https://www.w3schools.com/python/" target="_blank" rel="noopener noreferrer">Python Ressources</a></li>
-                </ul>
-            </div> 
-        </aside>
-    </main>
+        <section class="new-arrivals">
+            <h2>New Arrivals</h2>
 
+            <!--each product in a div-->
+            <div class="product-grid">
+                <div class="product-card-1">
+                    <img src="./images/t_shirt.jpg" alt="Product 1" class="product-image" width="295">
+                    <h3>T-shirt with Tape Details</h3>
+                    <div class="product-rate">
+                        <img src="./icons/fill_star.svg" alt="fill star">
+                        <img src="./icons/fill_star.svg" alt="fill star">
+                        <img src="./icons/fill_star.svg" alt="fill star">
+                        <img src="./icons/fill_star.svg" alt="fill star">
+                        <img src="./icons/mid_fill_star.svg" alt="fill star">
+                        <p>4.5/5</p>
+                    </div>
+                    <p class="single-price">$120</p>
+                </div>
+                <div class="product-card-2">
+                     <img src="./images/skinny_jeans_fit.jpg" alt="Product 1" class="product-image" width="295">
+                    <h3>Skinny Fit Jeans</h3>
+                    <div class="product-rate">
+                        <img src="./icons/fill_star.svg" alt="fill star">
+                        <img src="./icons/fill_star.svg" alt="fill star">
+                        <img src="./icons/mid_fill_star.svg" alt="fill star">
+                        <p>3.5/5</p>
+                    </div>
+                    <div class="double-price">
+                        <p class="new-price">$260</p>
+                        <p class="old-price">$240</p>
+                        <p class="percentage">-20%</p>
+                    </div>
+                </div>
+                <div class="product-card-3">
+                    <img src="./images/checkered_shirt.jpg" alt="Product 1" class="product-image" width="295">
+                    <h3>Checkered Shirt</h3>
+                    <div class="product-rate">
+                        <img src="./icons/fill_star.svg" alt="fill star">
+                        <img src="./icons/fill_star.svg" alt="fill star">
+                        <img src="./icons/fill_star.svg" alt="fill star">
+                        <img src="./icons/fill_star.svg" alt="fill star">
+                        <img src="./icons/mid_fill_star.svg" alt="fill star">
+                        <p>4.5/5</p>
+                    </div>
+                    <p class="single-price">$180</p>
+                </div>
+                <div class="product-card-4">
+                     <img src="./images/sleeve_striped_tshirt.jpg" alt="Product 1" class="product-image" width="295">
+                    <h3>sleeve Striped T-shirt</h3>
+                    <div class="product-rate">
+                        <img src="./icons/fill_star.svg" alt="fill star">
+                        <img src="./icons/fill_star.svg" alt="fill star">
+                        <img src="./icons/fill_star.svg" alt="fill star">
+                        <img src="./icons/fill_star.svg" alt="fill star">
+                        <img src="./icons/mid_fill_star.svg" alt="fill star">
+                        <p>4.5/5</p>
+                    </div>
+                     <div class="double-price">
+                        <p class="new-price">$160</p>
+                        <p class="old-price">$130</p>
+                        <p class="percentage">-30%</p>
+                    </div>
+                </div>
+            </div>
+            <button class="view-all-btn">View all</button>
+            <hr>
+        </section>
+
+
+        <!-- section for top selling -->
+        <section class="top-selling">
+            <h2>Top selling</h2>
+             <div class="product-grid">
+                <div class="product-card-1">
+                    <img src="./images/t_shirt.jpg" alt="Product 1" class="product-image" width="295">
+                    <h3>T-shirt with Tape Details</h3>
+                    <div class="product-rate">
+                        <img src="./icons/fill_star.svg" alt="fill star">
+                        <img src="./icons/fill_star.svg" alt="fill star">
+                        <img src="./icons/fill_star.svg" alt="fill star">
+                        <img src="./icons/fill_star.svg" alt="fill star">
+                        <img src="./icons/mid_fill_star.svg" alt="fill star">
+                        <p>4.5/5</p>
+                    </div>
+                    <p class="single-price">$120</p>
+                </div>
+                <div class="product-card-2">
+                     <img src="./images/skinny_jeans_fit.jpg" alt="Product 1" class="product-image" width="295">
+                    <h3>Skinny Fit Jeans</h3>
+                    <div class="product-rate">
+                        <img src="./icons/fill_star.svg" alt="fill star">
+                        <img src="./icons/fill_star.svg" alt="fill star">
+                        <img src="./icons/fill_star.svg" alt="fill star">
+                        <img src="./icons/mid_fill_star.svg" alt="fill star">
+                    </div>
+                    <div class="double-price">
+                        <p class="new-price">$260</p>
+                        <p class="old-price">$240</p>
+                        <p class="percentage">-20%</p>
+                    </div>
+                </div>
+                <div class="product-card-3">
+                     <img src="./images/checkered_shirt.jpg" alt="Product 1" class="product-image" width="295">
+                    <h3>Checkered Shirt</h3>
+                    <div class="product-rate">
+                        <img src="./icons/fill_star.svg" alt="fill star">
+                        <img src="./icons/fill_star.svg" alt="fill star">
+                        <img src="./icons/fill_star.svg" alt="fill star">
+                        <img src="./icons/fill_star.svg" alt="fill star">
+                        <img src="./icons/mid_fill_star.svg" alt="fill star">
+                        <p>4.5/5</p>
+                    </div>
+                    <p class="single-price">$180</p>
+                </div>
+                <div class="product-card-4">
+                     <img src="./images/sleeve_striped_tshirt.jpg" alt="Product 1" class="product-image" width="295">
+                    <h3>sleeve Striped T-shirt</h3>
+                    <div class="product-rate">
+                        <img src="./icons/fill_star.svg" alt="fill star">
+                        <img src="./icons/fill_star.svg" alt="fill star">
+                        <img src="./icons/fill_star.svg" alt="fill star">
+                        <img src="./icons/fill_star.svg" alt="fill star">
+                        <img src="./icons/mid_fill_star.svg" alt="fill star">
+                        <p>4.5/5</p>
+                    </div>
+                     <div class="double-price">
+                        <p class="new-price">$160</p>
+                        <p class="old-price">$130</p>
+                        <p class="percentage">-30%</p>
+                    </div>
+                </div>
+            </div>
+            <button class="view-all-btn">View all</button>
+        </section>
+
+        <section class="browse-dress">
+            <h3>BROWSE BY DRESS STYLE</h3>
+            <div class="dress">
+                <div class="styles">
+                    <p>Casual</p>
+                    <img src="./images/casual.png" alt="a man with a casual t-shirt"  class="clipped-image">
+                </div>
+                 <div class="styles">
+                    <p>Formal</p>
+                    <img src="./images/formal.png" alt="a man with suits" width="684" class="clipped-image">
+                </div>
+                 <div class="styles">
+                    <p>Party</p>
+                    <img src="./images/party.png" alt="a woman dress for partying" width="684" class="clipped-image">
+                </div>
+                 <div class="styles">
+                    <p>Gym</p>
+                    <img src="./images/gym.png" alt="a woman at gym" width="407" height="309px" class="clipped-image">
+                </div>
+            </div>
+        </section>
+
+        <!-- section for the review -->
+        <section class="review">
+            <div class="review-title">
+                <h3>OUR HAPPY CUSTOMERS</h3>
+                <img src="./images/arrow-down.svg" alt="arrow-down">
+                <img src="./images/arrow-down1.svg" alt="arrow-down">
+            </div>
+            <div class="review-container">
+            <div class="review-card">
+                <div class="star">
+                    <img src="./icons/fill_star.svg" alt="an icon of a star revier">
+                    <img src="./icons/fill_star.svg" alt="an icon of a star revier">
+                    <img src="./icons/fill_star.svg" alt="an icon of a star revier">
+                    <img src="./icons/fill_star.svg" alt="an icon of a star revier">
+                    <img src="./icons/fill_star.svg" alt="an icon of a star revier">
+                </div>
+                <p class="reviewer">Sarah M.<img src="./icons/green-check.svg" alt="green-check" width="24"></p>
+                <p class="review-content">
+                    "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”
+                </p>
+            </div>
+
+            <div class="review-card">
+                <div class="star">
+                    <img src="./icons/fill_star.svg" alt="an icon of a star revier">
+                    <img src="./icons/fill_star.svg" alt="an icon of a star revier">
+                    <img src="./icons/fill_star.svg" alt="an icon of a star revier">
+                    <img src="./icons/fill_star.svg" alt="an icon of a star revier">
+                    <img src="./icons/fill_star.svg" alt="an icon of a star revier">
+                </div>
+                <p class="reviewer">Sarah M.<img src="./icons/green-check.svg" alt="green-check" width="24"></p>
+                <p class="review-content">
+                    "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”
+                </p>
+            </div>
+
+            <div class="review-card">
+                <div class="star">
+                    <img src="./icons/fill_star.svg" alt="an icon of a star revier">
+                    <img src="./icons/fill_star.svg" alt="an icon of a star revier">
+                    <img src="./icons/fill_star.svg" alt="an icon of a star revier">
+                    <img src="./icons/fill_star.svg" alt="an icon of a star revier">
+                    <img src="./icons/fill_star.svg" alt="an icon of a star revier">
+                </div>
+                <p class="reviewer">Sarah M.<img src="./icons/green-check.svg" alt="green-check" width="24"></p>
+                <p class="review-content">
+                    "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.”
+                </p>
+            </div>
+            </div>
+        </section>
+               
+    </main>
+    <div class="cta-box">
+            <p class="cta-text">STAY UP TO DATE ABOUT OUR LATEST OFFERS</p>
+            <form action="#" method="post">
+                <label for="mail" class="img"><img src="./icons/mail.svg" alt="mail-icon"></label>
+                <input type="email" id="mail" name="user_mail" value="" placeholder="Enter your email address">
+                <button type="submit">Subscribe to Newsletter</button>
+            </form>
+    </div>
     <footer>
-        <p>©<span id="currentyear"></span> Donfred Vallon | Petion-ville, Haïti</p>
-        <p>last modification: <span id="lastmodified"></span></p>
+        
+         <div class="first-row" class="row">
+                <img src="./logos/shop_logo.svg" alt="Shop.co logo">
+                <p>We have cothes that suits your style and which you're proud to wear. From women to men.</p>
+                <div class="social-media">
+                    <a href="x.com"><img src="./icons/x.svg" alt="x logo"></a>
+                    <a href="facebook.com"><img src="./icons/facebook.svg" alt="facebook logo"></a>
+                    <a href="instagram.com"><img src="./icons/ig.svg" alt="instagram logo"></a>
+                    <a href="github.com"><img src="./icons/github.svg" alt="github logo"></a>
+                </div>
+            </div>
+        <div class="footer-content">
+            <div class="row">
+                <ul>
+                    <li class="head"><a href="">COMPANY</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Features</a></li>
+                    <li><a href="">Works</a></li>
+                    <li><a href="">Career</a></li>
+                </ul>
+            </div>
+
+            <div class="row">
+                 <ul>
+                    <li class="head"><a href="">HELP</a></li>
+                    <li><a href="">Customer Support</a></li>
+                    <li><a href="">Delivery details</a></li>
+                    <li><a href="">Terms & Conditions</a></li>
+                    <li><a href="">privacy Policy</a></li>
+                </ul>
+            </div>
+
+             <div class="row">
+                 <ul>
+                    <li class="head"><a href="">FAQ</a></li>
+                    <li><a href="">Account</a></li>
+                    <li><a href="">Manage deliveries</a></li>
+                    <li><a href="">Orders</a></li>
+                    <li><a href="">Payments</a></li>
+                </ul>
+            </div>
+
+            <div class="row">
+                 <ul>
+                    <li class="head"><a href="">RESSOURCES</a></li>
+                    <li><a href="">Free eBooks</a></li>
+                    <li><a href="">Development Tutorial</a></li>
+                    <li><a href="">How to - Blog</a></li>
+                    <li><a href="">Youtube Playlist</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr class="footer-hr">
+        <div class="footer-copyright">
+            <p class="copyright">Shop.co-<span id="current-year"></span>. All Right Reserved</p>
+            <div class="footer-card">
+                <img src="./icons/visa.png" alt="card">
+                <img src="./icons/mastercard.png" alt="card">
+                <img src="./icons/paypal.png" alt="card">
+                <img src="./icons/apple-pay.png" alt="card">
+                <img src="./icons/gpay.png" alt="card">
+            </div>
+        </div>
     </footer>
-    <script src="./scripts/getdates.js" defer></script> 
+    <script src="./script/home.js" defer></script>
+    
 </body>
 </html>
