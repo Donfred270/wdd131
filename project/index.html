@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Shop.co | Home page</title>
-    <!--<link rel="stylesheet" href="./styles/home.css">-->
-    <link rel="stylesheet" href="./styles/home_small.css">
+    <link rel="stylesheet" href="./styles/home.css">
+    <!--<link rel="stylesheet" href="./styles/home_small.css">-->
+    <!--<link rel="stylesheet" href="./styles/home_medium.css">-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400;1,700&display=swap" rel="stylesheet">
@@ -73,9 +74,9 @@
                 </div>
             </div>
             <picture>
-                <source media="(min-width: 769px)" srcset="./images/header_image_small.png">
+                <source media="(min-width: 769px)" srcset="images/banner-header.jpg">
                 <source media="(max-width: 540px)" srcset="images/header-phone.png" >
-                <img src="./images/header_image.png" alt="images/banner-header.jpg" style="width:100%;">
+                <img src="images/banner-header.jpg" alt="images/banner-header.jpg" style="width:100%;">
             </picture>
                 <div class="header-icons">
                     <img src="./icons/magic.svg" alt="heart icon" class="icon1">
@@ -249,11 +250,13 @@
             </div>
         </section>
 
-
-
         <!-- section for the review -->
         <section class="review">
-            <h3 class="review-title">OUR HAPPY CUSTOMERS</h3>
+            <div class="review-title">
+                <h3>OUR HAPPY CUSTOMERS</h3>
+                <img src="./images/arrow-down.svg" alt="arrow-down">
+                <img src="./images/arrow-down1.svg" alt="arrow-down">
+            </div>
             <div class="review-container">
             <div class="review-card">
                 <div class="star">
@@ -310,9 +313,7 @@
     </div>
     <footer>
         
-
-        <div class="footer-content">
-            <div class="first-row" class="row">
+         <div class="first-row" class="row">
                 <img src="./logos/shop_logo.svg" alt="Shop.co logo">
                 <p>We have cothes that suits your style and which you're proud to wear. From women to men.</p>
                 <div class="social-media">
@@ -322,7 +323,7 @@
                     <a href="github.com"><img src="./icons/github.svg" alt="github logo"></a>
                 </div>
             </div>
-
+        <div class="footer-content">
             <div class="row">
                 <ul>
                     <li class="head"><a href="">COMPANY</a></li>
