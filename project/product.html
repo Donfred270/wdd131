@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Shop.co | Home page</title>
+    <link rel="stylesheet" href="./styles/product.css">
+    <!--<link rel="stylesheet" href="./styles/home_small.css">-->
+    <!--<link rel="stylesheet" href="./styles/home_medium.css">-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="promo-bar">
+            <p>Sign up and get 20% off to your first order. <a href="#">Sign Up now</a></p>
+            <img src="./icons/no-.svg" alt="x icon">
+        </div>
+        <nav>
+            <div class="logo-hamberger">
+            <div class="hamberger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+
+            <img src="logos/shop_logo.svg" alt="website logo" class="logo" width="160">
+            </div>
+            <ul class="nav-menu">
+                <li class="shop"><a href="#">Shop</a><img src="icons/drop.svg" alt="drop down icon" class="drop-down" width="16"></li>
+                <li><a href="#">On Sale</a></li>
+                <li><a href="#">New Arrivals</a></li>
+                <li><a href="#">Brands</a></li>
+            </ul>
+            <div class="search-bar">
+                <img src="icons/search.svg" alt="search icon" class="search-icon" width="24" background-color="000">
+                <input class="search-input" placeholder="Search for products">
+            </div>
+            <div class="shop-user">
+                <div class="search">
+                    <img src="icons/vector.svg" alt="search icon" width="24" color="000">
+                </div>
+                <div class="cart">
+                    <img src="icons/cart.svg" alt="cart icon" class="cart-icon" width="24">
+                </div>
+                <div class="user">
+                    <img src="icons/account.svg" alt="user icon" class="user-icon" width="24">
+                </div>
+            </div>
+        </nav>
+    </header>
+    <hr>
+<main>
+    <section class="breadcrumb">
+      Home > Shop > Men > T-shirts
+    </section>
+
+    <section class="products">
+
+        <div class="product-gallery">
+            <div class="main-image">
+                <img id="main-product-image" src="images/one-life-graphic-t-shirt.jpg" alt="T-shirt One Life">
+            </div>
+            <div class="thumbnails">
+                 <img src="images/one-life-graphic-t-shirt.jpg" alt="T-shirt One Life"  onclick="changeMainImage(this)">
+                 <img src="images/one-life-graphic-t-shirt-back.jpg" alt="T-shirt One Life back"  onclick="changeMainImage(this)">
+                 <img src="images/one-life-graphic-t-shirt-wear.jpg" alt="T-shirt One Life wearing"  onclick="changeMainImage(this)">
+            </div>
+        </div>
+
+
+         <!-- color selector -->
+        <div class="color-selector">
+            <h3>Select Colors</h3>
+            <div class="color-options">
+                <div class="color-option selected" data-color="black" 
+                     data-images='["images/one-life-graphic-t-shirt.jpg", "images/one-life-graphic-t-shirt-back.jpg", "images/one-life-graphic-t-shirt-wear.jpg"]'>
+                    <div class="color-swatch" style="background-color: #000000;"></div>
+                    <span class="color-name">Noir</span>
+                </div>
+                <div class="color-option" data-color="white" 
+                     data-images='["images/white-t-shirt-front.jpg", "images/white-t-shirt-back.jpg", "images/white-t-shirt-wear.jpg"]'>
+                    <div class="color-swatch" style="background-color: #ffffff; border: 1px solid #eee;"></div>
+                    <span class="color-name">Blanc</span>
+                </div>
+                <div class="color-option" data-color="white" 
+                     data-images='["images/white-t-shirt-front.jpg", "images/white-t-shirt-back.jpg", "images/white-t-shirt-wear.jpg"]'>
+                    <div class="color-swatch" style="background-color: #ffffff; border: 1px solid #eee;"></div>
+                    <span class="color-name">Blanc</span>
+                </div>
+            </div>
+        </div>
+            
+    </section>
+
+</main>
+    
+</body>
+
+<div class="cta-box">
+            <p class="cta-text">STAY UP TO DATE ABOUT OUR LATEST OFFERS</p>
+            <form action="#" method="post">
+                <label for="mail" class="img"><img src="icons/mail.svg" alt="mail-icon"></label>
+                <input type="email" id="mail" name="user_mail" value="" placeholder="Enter your email address">
+                <button type="submit">Subscribe to Newsletter</button>
+            </form>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <div class="first-row" class="row" class="no-mobile">
+                <img src="logos/shop_logo.svg" alt="Shop.co logo">
+                <p>We have cothes that suits your style and which you're proud to wear. From women to men.</p>
+                <div class="social-media">
+                    <a href="x.com"><img src="icons/x.svg" alt="x logo"></a>
+                    <a href="facebook.com"><img src="icons/facebook.svg" alt="facebook logo"></a>
+                    <a href="instagram.com"><img src="icons/ig.svg" alt="instagram logo"></a>
+                    <a href="github.com"><img src="icons/github.svg" alt="github logo"></a>
+                </div>
+            </div>
+
+            <div class="row">
+                <ul>
+                    <li class="head"><a href="">COMPANY</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Features</a></li>
+                    <li><a href="">Works</a></li>
+                    <li><a href="">Career</a></li>
+                </ul>
+            </div>
+
+            <div class="row">
+                 <ul>
+                    <li class="head"><a href="">HELP</a></li>
+                    <li><a href="">Customer Support</a></li>
+                    <li><a href="">Delivery details</a></li>
+                    <li><a href="">Terms & Conditions</a></li>
+                    <li><a href="">privacy Policy</a></li>
+                </ul>
+            </div>
+
+             <div class="row">
+                 <ul>
+                    <li class="head"><a href="">FAQ</a></li>
+                    <li><a href="">Account</a></li>
+                    <li><a href="">Manage deliveries</a></li>
+                    <li><a href="">Orders</a></li>
+                    <li><a href="">Payments</a></li>
+                </ul>
+            </div>
+
+            <div class="row">
+                 <ul>
+                    <li class="head"><a href="">RESSOURCES</a></li>
+                    <li><a href="">Free eBooks</a></li>
+                    <li><a href="">Development Tutorial</a></li>
+                    <li><a href="">How to - Blog</a></li>
+                    <li><a href="">Youtube Playlist</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr class="footer-hr">
+        <div class="footer-copyright">
+            <p class="copyright">Shop.co-<span id="current-year"></span>. All Right Reserved</p>
+            <div class="footer-card">
+                <img src="icons/visa.png" alt="card">
+                <img src="icons/mastercard.png" alt="card">
+                <img src="icons/paypal.png" alt="card">
+                <img src="icons/apple-pay.png" alt="card">
+                <img src="icons/gpay.png" alt="card">
+            </div>
+        </div>
+    </footer>
+    <script src="script/product.js" defer></script>
+
+    
+</body>
+</html>
