@@ -263,19 +263,18 @@ nav{
 
  .shop-now {
     align-items: center;
-        width: 100%;
-        max-width: 300px;
-        background-color: var(--main-color);
-        color: var(--secondary-color);
-        border-radius: 50px;
-        border: none;
-        font-size: 16px;
-        font-weight: 500;
-        padding: 20px 0;
-        margin: 20px auto;
-        cursor: pointer;
-        transition: opacity 0.3s;
-        font-family: var(--secondary-font);
+    width: 100%;
+    background-color: var(--main-color);
+    color: var(--secondary-color);
+    border-radius: 50px;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 20px 0;
+    margin: 20px auto;
+    cursor: pointer;
+    transition: opacity 0.3s;
+    font-family: var(--secondary-font);
     }
 .stats{
     width: 100%;
@@ -293,7 +292,7 @@ nav{
     font-family: var(--secondary-font);
     font-size: 24px;
     color: var(--main-color);
-    font-weight: bold;
+    font-weight: 600;
 }
 .stat p{
     font-family: var(--secondary-font);
