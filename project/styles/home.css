@@ -771,6 +771,9 @@ justify-content: space-evenly;
 	background-color: var(--light-gray);
 	margin: 30px;
 }
+.arrow{
+	display: none;
+}
 .footer-copyright{
 	margin-top: 20px;
     gap: 20px;
@@ -948,27 +951,25 @@ nav ul li{
 .header-icons{
     width: 100%;
     height: 100%;
-    position: relative;
-    top: auto;
-    left: auto;
-	z-index: 1;
 }
 .icon1{
 	position: absolute;
-	top: 240px;
-	right: 100px;
+	top: 320px;
+	left: 750px
 }
 .icon2{
 	position: absolute;
-	top: 54%;
-	right: 46%;
+	top: 80px;
+	right: 100px;
 }
 .brands{
 	margin-top: -2px;
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
+	flex-wrap: wrap;
 	background-color: var(--main-color);
+	padding: 10px 10px;
 }
 .brands img{
 	margin: 50px 0;
@@ -980,11 +981,16 @@ nav ul li{
  font-size: 48px;
  margin:90px 0 60px;
 }
-.product-grid{
-	display: grid;
-	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-	gap: 20px;
-	padding: 0 100px;
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 0 100px;
+
+    /* 🔴 important reinit */
+    overflow-x: visible;
+    scroll-snap-type: none;
+    -webkit-overflow-scrolling: auto;
 }
 .new-arrivals h3, .top-selling h3{
 	font-family: var(--secondary-font);
@@ -1052,6 +1058,7 @@ nav ul li{
 	margin: 50px auto;
 	display: block;
 	text-align: center;
+	width: auto;
 }
 hr{
 	border: none;
@@ -1063,31 +1070,42 @@ hr{
 	background-color: #F0F0F0;
 	margin: 75px 100px 100px 100px;
 	border-radius: 40px;
-	padding: 85px 65px 65px 65px;
+	padding: 25px 50px 30px 50px;
 }
 .browse-dress h3{
 	font-family: var(--primary-font);
 	font-size: 48px;
-	margin-bottom: 30px;
 	text-align: center;
 }
-.dress{
-	position: relative;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-evenly;
-	align-items: center;
+.dress {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+  }
+
+.dress img:nth-of-type(1) {
+  width: 407px ;
+  height: auto;
+}
+.dress img:nth-of-type(2) {
+  width: 685px ;
+  height: auto;
+ 
+}
+.dress img:nth-of-type(3) {
+  width: 685px ;
+  height: auto;
+
+}
+.dress img:nth-of-type(4) {
+  width: 407px ;
+  height: auto;
+ 
 }
 
-.dress img{
-	border-radius: 20px;
-	margin: 10px;
-}
-
-.dress img:hover{
-	transform: scale(1.05);
-	transition: transform 0.3s ease;
-}
 .styles{
 	font-family: var(--secondary-font);
 	font-size: 28px;
@@ -1102,6 +1120,14 @@ hr{
 	z-index: 1;	
 }	
 
+ .review {
+    width: 100%;
+    position: relative;
+    left: auto;
+    right: auto;
+    margin: 0;
+  }
+
 .review h3{
 	font-family: var(--primary-font);
 	font-size: 48px;
@@ -1110,12 +1136,14 @@ hr{
 	text-align: left;
 }
 .review-card{
+	flex: 0 0 auto;
 	width: 350px;
+	scroll-snap-align: start;
 	height: auto;
 	background-color: rgba(0, 0, 0, 0.01);
 	border-radius: 20px;
 	padding: 30px;
-	margin: 20px 20px 0 20px;
+	margin: 20px 0px 0 0px;
 	border: solid, 1px, rgba(0, 0, 0, 0.06);
 }
 .star{
@@ -1144,10 +1172,85 @@ hr{
 	margin-top: 10px;
 	line-height: normal;
 }
-.review-container{
-	display: flex;
-	margin: 0 100px;
+.review-container {
+  display: flex;
+  overflow-x: auto;
+  padding: 20px 100px;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+
 }
+.review-container-wrapper {
+  position: relative;
+  overflow: hidden; /* important */
+}
+.review-container-wrapper::before,
+.review-container-wrapper::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 60px;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+  backdrop-filter: blur(1px); /* real blur */
+  -webkit-backdrop-filter: blur(8px); /* Safari */
+}
+
+.review-container-wrapper::before {
+  left: 0;
+  background: linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,0));
+}
+
+.review-container-wrapper::after {
+  right: 0;
+ background: linear-gradient(to left, rgba(255,255,255,1), rgba(255,255,255,0));
+}
+.review-title{
+    display: flex;
+    justify-content: left;
+	
+}
+.review-title img{
+    display: none;
+}
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 3;
+  background-color: rgba(255, 255, 255, 0.8); /* ou utilise #fff si fond clair */
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.arrow:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.arrow.left {
+  left: 10px;
+}
+
+.arrow.right {
+  right: 10px;
+}
+
+.arrow img {
+  width: 16px;
+  height: 16px;
+}
+
+
 .cta-box{
 	background-color: var(--main-color);
 	border-radius: 20px;
@@ -1156,10 +1259,11 @@ hr{
 	flex-direction: row;
 	align-items: center;
 	position: relative;
-	margin: 25px 100px;
+	margin: 0px 80px 25px 150px;
 	padding-left: 65px;
 	padding-right: 65px;
 	bottom: -100px;
+	width: auto;
 }
 
 .cta-text{
@@ -1167,17 +1271,23 @@ hr{
 	font-size: 40px;
 	color: var(--secondary-color);
 	padding-top: 10px;
+	width: 70%;
+	text-align: left;
+	margin: auto;
 }
 form{
+	position: relative;
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
 	padding: 10px 0 40px;
 	margin-left: 100px;
+	width: auto;
+	align-items: center;
 }
 form button{
 	font-family: var(--secondary-font);
-	width:auto;
+	width: 100%;
 	border: none;
 	background-color: var(--secondary-color);
 	color: var(--main-color);
@@ -1188,6 +1298,7 @@ form button{
 	transform: matrix(1, 0, 0, 1, 0, 0);
 	transition: all 0.3s ease;
 	cursor: pointer;
+	font-weight: 500;
 }
 form button:hover{
 	background-color: #ffffff;
@@ -1213,11 +1324,12 @@ form button:hover{
 	color: var(--main-color);
 }
 form img{
-	position: relative;
+	position: absolute;
 	width: 24px;
 	margin-right: 20px;
-	top: 34px;
-	left: 15px;
+	top: 21px;
+	right: 40px;
+	
 }
 
 footer{
@@ -1226,6 +1338,9 @@ padding: 95px 100px;
 display: flex;
 flex-direction: column;
 justify-content: space-evenly;
+}
+footer .first-row.row.desktop{
+	display: none;
 }
 .footer-content{
 	margin-top: 20px;
@@ -1292,5 +1407,6 @@ justify-content: space-evenly;
 	font-size: 14px;
 	color: var(--main-color);
 	justify-content: space-between;
+	flex-direction: row;
 }
 }
