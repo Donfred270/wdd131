@@ -1,0 +1,109 @@
+/* Mobile-first base styles */
+:root {
+  --ink: #16212b;
+  --teal: #0b4f5c;
+  --night: #121c24;
+  --amber: #f2b134;
+  --line: #c9d3d8;
+  --head-font: "Bricolage Grotesque", system-ui, sans-serif;
+  --body-font: "Literata", Georgia, serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: var(--body-font);
+  line-height: 1.6;
+  color: var(--ink);
+  background: #fff;
+}
+
+h1, header, footer, nav { font-family: var(--head-font); }
+
+/* Header: title + hamburger on one row, nav drops below */
+header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  background: var(--teal);
+  color: #fff;
+  padding: 0.75rem 1rem;
+}
+
+.site-title { font-size: 1.6rem; font-weight: 700; }
+
+#menu {
+  background: none;
+  border: 0;
+  color: #fff;
+  font-size: 2rem;
+  line-height: 1;
+  padding: 0.25rem 0.5rem;
+  cursor: pointer;
+}
+
+#menu:focus-visible, nav a:focus-visible { outline: 3px solid var(--amber); outline-offset: 2px; }
+
+/* Nav (Flex): hidden until the button is clicked */
+nav {
+  display: none;
+  flex-direction: column;
+  flex-basis: 100%;
+  margin-top: 0.5rem;
+}
+
+nav.open { display: flex; }
+
+nav a {
+  padding: 0.7rem 0.5rem;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+  transition: background-color 0.25s, color 0.25s;
+}
+
+nav a:hover { background: var(--night); color: var(--amber); }
+
+/* Main: limited width, centered; Grid with one column on mobile */
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1rem 2rem;
+}
+
+h1 { text-align: center; font-size: 1.6rem; margin: 1.5rem 0; }
+
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+figure { margin: 0; }
+
+figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--line);
+}
+
+figcaption {
+  margin-top: 0.35rem;
+  text-align: center;
+  font-size: 0.95rem;
+  color: var(--teal);
+}
+
+footer {
+  background: var(--teal);
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+footer p { margin: 0.2rem 0; }
+#lastModified { font-size: 0.9rem; color: var(--amber); }

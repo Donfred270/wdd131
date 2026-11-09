@@ -1,0 +1,27 @@
+/* Larger view: loaded for viewports 700px and wider */
+#menu { display: none; }
+
+nav {
+  display: flex;
+  flex-direction: row;
+  flex-basis: auto;
+  margin-top: 0;
+  gap: 0.25rem;
+}
+
+nav a {
+  border-top: 0;
+  border-bottom: 3px solid transparent;
+  padding: 0.5rem 0.9rem;
+}
+
+nav a:hover { border-bottom-color: var(--amber); }
+
+header { padding: 0.9rem 2rem; }
+
+.gallery {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem 1.5rem;
+}
+
+h1 { font-size: 2rem; }

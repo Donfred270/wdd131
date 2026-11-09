@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Temple Album – WDD 131 – Donfred Vallon</title>
+  <meta name="description" content="WDD 131 – Dynamic Web Fundamentals. Temple Album by Donfred Vallon: a responsive picture album with a hamburger menu. Keywords: temples, album, responsive design, HTML, CSS, JavaScript.">
+  <meta name="author" content="Donfred Vallon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;700&family=Literata:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/temples.css">
+  <link rel="stylesheet" href="styles/temples-large.css" media="(min-width: 700px)">
+  <script src="scripts/temples.js" defer></script>
+</head>
+<body>
+  <header>
+    <span class="site-title">Temple Album</span>
+    <button id="menu" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="site-nav">&#9776;</button>
+    <nav id="site-nav">
+      <a href="#">Home</a>
+      <a href="#">Old</a>
+      <a href="#">New</a>
+      <a href="#">Large</a>
+      <a href="#">Small</a>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Home</h1>
+    <div class="gallery">
+      <figure><img src="https://churchofjesuschristtemples.org/assets/img/temples/aba-nigeria-temple/aba-nigeria-temple-5092-thumb.jpg" alt="Aba Nigeria Temple" width="400" height="225" loading="lazy"><figcaption>Aba Nigeria Temple</figcaption></figure>
+      <figure><img src="https://churchofjesuschristtemples.org/assets/img/temples/brasilia-brazil-temple/brasilia-brazil-temple-39184-main.jpg" alt="Brasília Brazil Temple" width="400" height="225" loading="lazy"><figcaption>Brasília Brazil Temple</figcaption></figure>
+
+      <figure><img src="https://churchofjesuschristtemples.org/assets/img/temples/atlanta-georgia-temple/atlanta-georgia-temple-13940-main.jpg" alt="Atlanta Georgia Temple" width="400" height="225" loading="lazy"><figcaption>Atlanta Georgia Temple</figcaption></figure>
+
+      <figure><img src="https://churchofjesuschristtemples.org/assets/img/temples/_temp/056-Madrid-Spain-Temple.jpg" alt="Madrid Spain Temple" width="400" height="225" loading="lazy"><figcaption>Madrid Spain Temple</figcaption></figure>
+
+      <figure><img src="https://churchofjesuschristtemples.org/assets/img/temples/montpelier-idaho-temple/montpelier-idaho-temple-70458-main.jpg" alt="Montpelier Idaho Temple" width="400" height="225" loading="lazy"><figcaption>Montpelier Idaho Temple</figcaption></figure>
+
+      <figure><img src="https://churchofjesuschristtemples.org/assets/img/temples/calabar-nigeria-temple/calabar-nigeria-temple-75523-main.jpg" alt="Calabar Nigeria Temple" width="400" height="225" loading="lazy"><figcaption>Calabar Nigeria Temple</figcaption></figure>
+
+      <figure><img src="https://churchofjesuschristtemples.org/assets/img/temples/buenos-aires-argentina-temple/buenos-aires-argentina-temple-4087-main.jpg" alt="Buenos Aires Argentina Temple" width="400" height="225" loading="lazy"><figcaption>Buenos Aires Argentina Temple</figcaption></figure>
+
+      <figure><img src="https://churchofjesuschristtemples.org/assets/img/temples/washington-d.c.-temple/washington-d.c.-temple-14992-main.jpg" alt="Washington D.C. Temple" width="400" height="225" loading="lazy"><figcaption>Washington D.C. Temple</figcaption></figure>
+
+      <figure><img src="https://churchofjesuschristtemples.org/assets/img/temples/los-angeles-california-temple/los-angeles-california-temple-38945-main.jpg" alt="Los Angeles California Temple" width="400" height="225" loading="lazy"><figcaption>Los Angeles California Temple</figcaption></figure>
+    </div>
+  </main>
+
+
+  <footer>
+    <p>&copy;<span id="currentyear"></span> | Donfred Vallon | Brazil</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
