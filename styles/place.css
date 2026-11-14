@@ -1,0 +1,87 @@
+:root {
+  --green: #0b5d3b;
+  --green-dark: #083f29;
+  --yellow: #f2c230;
+  --blue: #17407a;
+  --ink: #16212b;
+  --paper: #ffffff;
+  --line: #c9d3d8;
+  --head-font: "Bricolage Grotesque", system-ui, sans-serif;
+  --body-font: "Literata", Georgia, serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: var(--body-font);
+  line-height: 1.6;
+  color: var(--ink);
+  background: #f4f7f5;
+}
+
+h1, h2, header, footer { font-family: var(--head-font); }
+
+header {
+  background: var(--green);
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  border-bottom: 4px solid var(--yellow);
+}
+
+h1 { margin: 0; font-size: 1.6rem; }
+
+main { max-width: 1100px; margin: 0 auto; }
+
+.hero img { display: block; width: 100%; height: auto; }
+
+.card {
+  position: relative;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  margin: 1rem;
+  padding: 0 1rem 1rem;
+  overflow: hidden;
+}
+
+.card h2 {
+  margin: 0 -1rem 1rem;
+  padding: 0.6rem 1rem;
+  background: var(--blue);
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.card ul { margin: 0; padding-left: 1.2rem; }
+.card li, .card p { margin: 0 0 0.5rem; }
+.weather-icon { position: absolute; top: 3.2rem; right: 1rem; width: 56px; height: 56px; }
+
+footer {
+  background: var(--green);
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  border-top: 4px solid var(--yellow);
+}
+
+footer p { margin: 0.2rem 0; }
+#lastModified { font-size: 0.9rem; color: var(--yellow); }
+
+@media (min-width: 700px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    padding: 0 1.5rem 1.5rem;
+  }
+
+  .hero { grid-column: 1 / -1; grid-row: 1; }
+  .card { margin: -4rem 0 0; z-index: 1; }
+
+  h1 { font-size: 2.2rem; }
+
+  .weather-icon { display: none; }
+  .weather h2::after { content: "\26C5"; margin-left: 0.5rem; }
+}

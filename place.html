@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Campos do Jordão, Brazil – WDD 131 – Donfred Vallon</title>
+  <meta name="description" content="WDD 131 – Dynamic Web Fundamentals. Donfred Vallon's place page about Campos do Jordão, Brazil: mountain town, cool climate, data and weather with wind chill.">
+  <meta name="author" content="Donfred Vallon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;700&family=Literata:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/place.css">
+  <script src="scripts/place.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Campos do Jordão, Brazil</h1>
+  </header> 
+
+  <main>
+    <picture class="hero">
+      <source media="(min-width: 700px)" srcset="images/campos-hero-1000.webp" width="1000" height="420">
+      <img src="images/campos-hero-480.webp" srcset="images/campos-hero-480.webp 480w, images/campos-hero-1000.webp 1000w" sizes="100vw" alt="Pine-covered mountains under a blue sky" width="480" height="320">
+    </picture>
+
+    <section class="card data">
+      <h2>Data</h2>
+      <ul>
+        <li><strong>Region:</strong> Serra da Mantiqueira, São Paulo state</li>
+        <li><strong>Elevation:</strong> about 1,600 m</li>
+        <li><strong>Population:</strong> about 50,000</li>
+        <li><strong>Language:</strong> Portuguese</li>
+        <li><strong>Known for:</strong> winter festival, chocolate, fondue</li>
+        <li><strong>Best season:</strong> June to August (cool, dry)</li>
+      </ul>
+    </section>
+
+    <section class="card weather">
+      <h2>Weather</h2>
+      <img class="weather-icon" src="images/weather.svg" alt="Partly cloudy" width="64" height="64">
+      <p><strong>Temperature:</strong> <span id="temp">8</span> °C</p>
+      <p><strong>Conditions:</strong> Partly cloudy</p>
+      <p><strong>Wind:</strong> <span id="wind">12</span> km/h</p>
+      <p><strong>Wind chill:</strong> <span id="windchill"></span></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy;<span id="currentyear"></span> | Donfred Vallon | Brazil</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
